@@ -14,6 +14,7 @@ use App\Http\Controllers\AircraftController;
 | be assigned to the "api" middleware group. Make something great!
 |
 */
+Route::get('/aircraft_airports', [AircraftController::class,'aircraft_airports']);   
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
